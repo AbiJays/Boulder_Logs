@@ -38,5 +38,11 @@ def show_bloc(id):
     bloc = bloc_repository.select(id)
     return render_template("blocs/show.html", bloc = bloc)
 
+# EDIT
+@blocs_blueprint.route("/blocs/<id>/edit", methods=["GET"])
+def edit_bloc(id):
+    bloc = bloc_repository.select(id)
+    return render_template("blocs/edit.html", bloc = bloc)
+
 
 # DELETE(id)
