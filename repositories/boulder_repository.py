@@ -32,6 +32,11 @@ def select(id):
         boulder = Boulder(result["name"], result["rock_type"], result["id"])
     return boulder
 
+def update(boulder):
+    sql = "UPDATE boulders SET (name, rock_type) = (%s, %s) WHERE id = %s"
+    values = [boulder.name, boulder.rock_type, boulder.id]
+    run_sql(sql, values)
+
 def delete_all():
     sql = "DELETE FROM boulders"
     run_sql(sql)
@@ -39,9 +44,4 @@ def delete_all():
 def delete(id):
     sql = "DELETE FROM boulders WHERE id = %s"
     values = [id]
-    run_sql(sql, values)
-
-def update(boulder):
-    sql = "UPDATE boulders SET (name, rock_type) = (%s, %s) WHERE id = %s"
-    values = [boulder.name, boulder.rock_type, boulder.id]
     run_sql(sql, values)

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div>
+        <h3>{{ bloc.name }}</h3>
+        <p>{{ bloc.name }}</p>
+        <p>{{ bloc.wall_angle }}</p>
+        <p>{{ bloc.boulder }}</p>
+        <p>Completed? {{ bloc.completed }}</p>
+        <p><a href="/blocs/{{bloc.id}}/edit" class="edit-link">Edit</a></p>
+        
+    </div>
+{% endblock content %}

@@ -12,12 +12,12 @@ def boulders():
     return render_template("boulders/index.html", all_boulders = boulders)
 
 # NEW
-@boulders_blueprint.route("/boulders/new", methods = ['GET'])
+@boulders_blueprint.route("/boulders/new", methods = ["GET"])
 def new_boulder():
     return render_template("boulders/new.html")
 
 # CREATE
-@boulders_blueprint.route("/boulders", methods=['POST'])
+@boulders_blueprint.route("/boulders", methods=["POST"])
 def create_boulder():
     name = request.form["name"]
     rock_type = request.form["rock_type"]
@@ -26,13 +26,13 @@ def create_boulder():
     return redirect("/boulders")
 
 # SHOW
-@boulders_blueprint.route("/boulders/<id>", methods= ['GET'])
+@boulders_blueprint.route("/boulders/<id>", methods= ["GET"])
 def show_boulder(id):
     boulder = boulder_repository.select(id)
-    return render_template("boulders/show.html")
+    return render_template("boulders/show.html", boulder = boulder)
 
 # EDIT
-@boulders_blueprint.route("/boulders/<id>/edit", methods=['GET'])
+@boulders_blueprint.route("/boulders/<id>/edit", methods=["GET"])
 def edit_boulder(id):
     boulder = boulder_repository.select(id)
     return render_template("boulders/edit.html", boulder = boulder)

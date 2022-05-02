@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+<form action="/blocs" method="post">
+    
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Name" required autofocus />
+    </div>
+
+    <div>
+        <label for="grade">Grade: </label>
+        <input type="text" id="grade" name="grade" placeholder="Grade" required/>
+    </div>
+
+    <div>
+        <label for="wall_angle">Wall Angle: </label>
+        <input type="text" id="wall_angle" name="wall_angle" placeholder="Wall Angle" required/>
+    </div>
+
+    <div>
+        <label for="boulder">Boulder: </label>
+        <select name="boulder_id" id="boulder">
+            {% for boulder in all_boulders %}
+                <option value="{{boulder.id}}">{{boulder.name}}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div>
+        <label for="">Completed:</label>
+        <select name="completed" id="completed">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+    </div>
+
+    <button type="submit">Add Bloc</button>
+
+</form>
+
+{% endblock content %}

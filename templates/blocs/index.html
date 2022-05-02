@@ -6,8 +6,19 @@
         <a href="blocs/{{bloc.id}}">{{bloc.name}}</a>
         <p>{{ bloc.grade }}</p>
         <p>{{ bloc.wall_angle }}</p>
-        <p>{{ bloc.boulder }}</p>
+        <p>{{ bloc.boulder.name }}</p>
         <p>{{ bloc.completed }}</p>
     </div>    
+    <div class="buttons">
+        <form class="delete-form" action="/blocs{{bloc.id}}/delete" method="POST">
+            <button class="trash-button"> <i class="fa fa-trash-o fa-3x" style="color: red" aria-hidden="true"></i></button>
+        </form>
+
+        {% if bloc.completed == True %}
+            <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>
+        {% else %}
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        {% endif %}
+    </div>
 {% endfor %}
 {% endblock content %}
