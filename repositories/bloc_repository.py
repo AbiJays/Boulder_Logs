@@ -47,3 +47,8 @@ def delete(id):
     sql = "DELETE FROM blocs WHERE id = %s"
     values = [id]
     run_sql(sql, values)
+
+def update(bloc):
+    sql = "UPDATE blocs SET (name, grade, wall_angle, boulder_id, completed) = (%s, %s, %s, %s, %s) WHERE id = %s"
+    values = [bloc.name, bloc.grade, bloc.wall_angle, bloc.boulder.id, bloc.completed, bloc.id]
+    run_sql(sql, values)

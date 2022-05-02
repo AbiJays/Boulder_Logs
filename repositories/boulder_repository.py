@@ -40,3 +40,8 @@ def delete(id):
     sql = "DELETE FROM boulders WHERE id = %s"
     values = [id]
     run_sql(sql, values)
+
+def update(boulder):
+    sql = "UPDATE boulders SET (name, rock_type) = (%s, %s) WHERE id = %s"
+    values = [boulder.name, boulder.rock_type, boulder.id]
+    run_sql(sql, values)

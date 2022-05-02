@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="/boulders" method="post" >
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Boulder name" required autofocus />
+    </div>
+    
+    <div>
+        <label for="rock_type">Rock Type:</label>
+        <input type="text" id="rock_type" name="rock_type" placeholder="rock_type" required/>
+    </div>
+
+    <button type="submit">Add Boulder</button>
+</form>
+
+{% endblock content %}
