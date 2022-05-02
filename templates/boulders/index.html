@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+{% for boulder in all_boulders %}
+    <div class="boulder">
+        <a href="boulders/{{boulder.id}}">{{boulder.name}}</a>
+        <p>{{boulder.rock_type}}</p>
+    </div>
+{% endfor %}
+{% endblock content %}
+
+<!--new div is used for css styling or positioning. target boulder class -->

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for bloc in all_blocs %}
+    <div class="bloc">
+        <a href="blocs/{{bloc.id}}">{{bloc.name}}</a>
+        <p>{{ bloc.grade }}</p>
+        <p>{{ bloc.wall_angle }}</p>
+        <p>{{ bloc.boulder }}</p>
+        <p>{{ bloc.completed }}</p>
+    </div>    
+{% endfor %}
+{% endblock content %}
