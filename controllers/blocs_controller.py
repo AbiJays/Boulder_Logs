@@ -46,3 +46,7 @@ def edit_bloc(id):
 
 
 # DELETE(id)
+@blocs_blueprint.route("/blocs/<id>/delete", methods=["POST"])
+def delete_bloc(id):
+    bloc_repository.delete(id)
+    return redirect("/blocs")
