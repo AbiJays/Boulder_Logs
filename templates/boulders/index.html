@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    
+    <h2>All Boulders</h2>
 {% for boulder in all_boulders %}
     <div class="boulder">
         <a href="boulders/{{boulder.id}}">{{boulder.name}}</a>

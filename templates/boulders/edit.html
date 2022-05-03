@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
+    <h2>Edit Boulder</h2>
     <form action="/boulders/{{ boulder.id }}" method="post">
         <div>
             <label for="name">Name: </label>

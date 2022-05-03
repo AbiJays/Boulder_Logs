@@ -10,26 +10,25 @@ header {
   margin-bottom: 10px;
   padding: 10;
   align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  color:rgb(45, 52, 59);
+  padding-left: 16px;
+}
+
+h2 {
+  color: cadetblue;
+  padding-left: 16px;
 }
 
 nav a{
   text-decoration: underline;
+  color: rgb(49, 61, 49);
 }
 nav a:hover{
-  color: antiquewhite;
-}
-
-header{
-  height: 4em;
-  background-color: cadetblue;
-  margin: 0;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-body > header > h1{
-  padding-left: 16px;
-  font-size: 2em;
+  color: blanchedalmond;
 }
 
 nav ul{
@@ -41,9 +40,6 @@ nav ul{
 nav ul li{
   margin-right: 20px;
 }
-
-
-
 
 .delete-form{
     display: inline;
