@@ -41,6 +41,29 @@ nav ul li{
   margin-right: 20px;
 }
 
+body > div > form {
+  padding-left: 100px;
+}
+
+.boulder{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.bloc{
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.buttons{
+  width: 10px;
+}
+
 .delete-form{
     display: inline;
   }

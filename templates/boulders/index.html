@@ -4,7 +4,7 @@
 {% for boulder in all_boulders %}
     <div class="boulder">
         <a href="boulders/{{boulder.id}}">{{boulder.name}}</a>
-        <p>{{boulder.rock_type}}</p>
+        <br>{{boulder.rock_type}}
     </div>
 {% endfor %}
 {% endblock content %}
