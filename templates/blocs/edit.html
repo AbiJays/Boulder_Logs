@@ -31,8 +31,12 @@
     <div>
         <label for="">Completed:</label>
         <select name="completed" id="completed">
-            <option value="true">True</option>
-            <option value="false">False</option>
+            <option value="true" {% if bloc.compoleted ==  True %}
+                selected ="selected"
+            {% endif %}>True</option>
+            <option value="false" {% if bloc.completed == False %}
+                selected = "selected"
+            {% endif %}>False</option>
         </select>
     </div>
 
