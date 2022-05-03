@@ -4,16 +4,18 @@
 {% for bloc in all_blocs %}
     <div class="bloc">
         <a href="blocs/{{bloc.id}}">{{bloc.name}}</a>
-        <p>{{ bloc.grade }}</p>
-        <p>{{ bloc.wall_angle }}</p>
-        <p>{{ bloc.boulder.name }}</p>
-    </div>    
+        <br>{{ bloc.grade }}
+        <br>{{ bloc.wall_angle }}
+        <br><a href="/boulders/{{bloc.boulder.id}}">{{ bloc.boulder.name }}</a>
+    </div>   
+    
     <div class="buttons">
         {% if bloc.completed == True %}
             <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>
         {% else %}
             <i class="fa fa-times fa-2x" aria-hidden="true"></i>
         {% endif %}
+        <p></p>
     </div>
 {% endfor %}
 {% endblock content %}

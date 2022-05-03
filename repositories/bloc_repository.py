@@ -1,4 +1,3 @@
-from unicodedata import name
 from db.run_sql import run_sql
 
 from models.bloc import Bloc
@@ -35,7 +34,7 @@ def select(id):
 
     if result is not None:
         boulder = boulder_repository.select(result["boulder_id"])
-        bloc = Bloc(result["name"], result["grade"], result["wall_angle"], boulder.name, result["completed"], result["id"])
+        bloc = Bloc(result["name"], result["grade"], result["wall_angle"], boulder, result["completed"], result["id"])
     return bloc
 
 def update(bloc):
