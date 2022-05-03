@@ -42,7 +42,8 @@ def show_bloc(id):
 @blocs_blueprint.route("/blocs/<id>/edit", methods=["GET"])
 def edit_bloc(id):
     bloc = bloc_repository.select(id)
-    return render_template("blocs/edit.html", bloc = bloc)
+    boulders = boulder_repository.select_all()
+    return render_template("blocs/edit.html", bloc = bloc, all_boulders = boulders)
 
 
 # UPDATE
