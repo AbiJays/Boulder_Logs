@@ -2,12 +2,48 @@ body{
   font-family: "Helvetica", arial, sans-serif; font-size: 16px;
 }
 
-a{
-  text-decoration: none;
+header {
+  height: 4em;
+  background-color: cadetblue;
+  margin: 0;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10;
+  align-items: center;
 }
-a:hover{
+
+nav a{
+  text-decoration: underline;
+}
+nav a:hover{
   color: antiquewhite;
 }
+
+header{
+  height: 4em;
+  background-color: cadetblue;
+  margin: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+body > header > h1{
+  padding-left: 16px;
+  font-size: 2em;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li{
+  margin-right: 20px;
+}
+
+
+
 
 .delete-form{
     display: inline;
