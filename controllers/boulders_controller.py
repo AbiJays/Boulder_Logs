@@ -1,3 +1,4 @@
+from unicodedata import name
 from flask import Flask, render_template, request, redirect
 from flask import Blueprint
 from models.boulder import Boulder
@@ -36,3 +37,12 @@ def show_boulder(id):
 def edit_boulder(id):
     boulder = boulder_repository.select(id)
     return render_template("boulders/edit.html", boulder = boulder)
+
+# UPDATE
+@boulders_blueprint.route("/boulders/<id>", methods=["POST"])
+def update_boulder(id):
+    name = request.form["name"]
+    rock_type = request.form["rock_type"]
+    boulder = Boulder(name, rock_type, id)
+    boulder_repository.update(boulder)
+    return redirect("/boulders")

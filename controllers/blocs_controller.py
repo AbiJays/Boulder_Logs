@@ -45,6 +45,19 @@ def edit_bloc(id):
     return render_template("blocs/edit.html", bloc = bloc)
 
 
+# UPDATE
+@blocs_blueprint.route("/blocs/<id>", methods = ["POST"])
+def update_bloc(id):
+    name = request.form["name"]
+    grade = request.form["grade"]
+    wall_angle = request.form["wall_angle"]
+    boulder_id = request.form["boulder_id"]
+    completed = request.form["completed"]
+    boulder = boulder_repository.select(boulder_id)
+    bloc = Bloc(name, grade, wall_angle, boulder, completed)
+    bloc_repository.save(bloc)
+    return redirect("/blocs")
+
 # DELETE(id)
 @blocs_blueprint.route("/blocs/<id>/delete", methods=["POST"])
 def delete_bloc(id):

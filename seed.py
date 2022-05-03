@@ -16,3 +16,12 @@ bloc_repository.save(bloc1)
 
 bloc2 = Bloc("Heathen Chemistry Low Start", "V11", "Overhang", boulder1, False)
 bloc_repository.save(bloc2)
+
+boulder2 = Boulder("Main Wall Left", "Sandstone")
+boulder_repository.save(boulder2)
+
+bloc3 = Bloc("Jammed Block Eliminate", "V5+", "Slight Overhang", boulder2, False)
+bloc_repository.save(bloc3)
+
+bloc4 = Bloc("Polo", "V8", "Slight Overhang", boulder2, False)
+bloc_repository.save(bloc2)
