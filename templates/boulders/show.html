@@ -4,8 +4,12 @@
     <div>
         <h3>{{boulder.name}}</h3>
         <p>{{boulder.rock_type}}</p>
-        <p><a href="/boulders/{{boulder.id}}/edit" class="edit-link">Edit</a></p>
-        
+        <div class="buttons">
+            <p><a href="/boulders/{{boulder.id}}/edit" class="edit-link">Edit</a></p>
+            <form action="/boulders/{{boulder.id}}/delete" method="POST">
+                <button class="delete-button">Delete</button>
+          </form>
+        </div>
     </div>
 
 {% endblock content %}

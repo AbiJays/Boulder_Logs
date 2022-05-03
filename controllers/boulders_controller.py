@@ -46,3 +46,9 @@ def update_boulder(id):
     boulder = Boulder(name, rock_type, id)
     boulder_repository.update(boulder)
     return redirect("/boulders")
+
+# DELETE(id)
+@boulders_blueprint.route("/boulders/<id>/delete", methods=["POST"])
+def delete_boulder(id):
+    boulder_repository.delete(id)
+    return redirect("/boulders")
