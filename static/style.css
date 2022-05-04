@@ -18,17 +18,12 @@ h1 {
   padding-left: 16px;
 }
 
-h2 {
-  color: cadetblue;
-  padding-left: 16px;
-}
-
 nav a{
   text-decoration: underline;
   color: rgb(49, 61, 49);
 }
 nav a:hover{
-  color: blanchedalmond;
+  color:rgb(255, 255, 255)
 }
 
 nav ul{
@@ -41,8 +36,22 @@ nav ul li{
   margin-right: 20px;
 }
 
+h2 {
+  color: cadetblue;
+  padding-left: 16px;
+}
+
+
 body > div > form {
   padding-left: 100px;
+}
+
+body a{
+  color:rgb(45, 52, 59)
+}
+body > div a:hover{
+  color: cadetblue;
+  font-style: oblique;
 }
 
 .boulder{
@@ -51,6 +60,7 @@ body > div > form {
   width: 250px;
   padding: 10px;
   margin: 5px;
+  
 }
 
 .bloc{
