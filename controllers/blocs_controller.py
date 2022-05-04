@@ -55,8 +55,8 @@ def update_bloc(id):
     boulder_id = request.form["boulder_id"]
     completed = request.form["completed"]
     boulder = boulder_repository.select(boulder_id)
-    bloc = Bloc(name, grade, wall_angle, boulder, completed)
-    bloc_repository.save(bloc)
+    bloc = Bloc(name, grade, wall_angle, boulder, completed, id)
+    bloc_repository.update(bloc)
     return redirect("/blocs")
 
 # DELETE(id)
