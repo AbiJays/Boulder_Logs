@@ -54,6 +54,10 @@ body > div a:hover{
   font-style: oblique;
 }
 
+body>div>div {
+  padding-left: 16px;
+}
+
 .boulder{
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
