@@ -7,4 +7,6 @@ class Bloc:
         self.boulder = boulder
         self.completed = completed
         self.id = id
-        
+    
+    def mark_complete(self):
+        self.completed = True
