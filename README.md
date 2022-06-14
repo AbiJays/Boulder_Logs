@@ -23,6 +23,6 @@ The actual Brief:
 <p>The aim was to create an application that would allow the user to log climbs- much like a person would log places in a bucket list- and mark them as being completed or uncompleted - much like bucket list items are marked as being completed or not, you see how this works. These climbs, or blocs (name for individual boulder climbs because I have focused my application on bouldering specifically) would also need to have a specific boulder that they belong to- this is because this is how climbing works.</p>
 
 
-##Anything to add?
+## Anything to add?
 
 There is a lot I would love to build onto the bare bones of application in its current state, the least of which is the pretty javascript stuff that will make the whole thing really function how I want it to, in the meantime here it is in all its glory!
