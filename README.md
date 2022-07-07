@@ -25,8 +25,8 @@ The actual Brief:
 
 ## Anything to add?
 
-There is a lot I would love to build onto the bare bones of the application in its current state
-> A Crag Class, in much the same way that a bloc is saved to a boulder, boulders will belong to a crag. Crags will have a name, a rock-type that is inherited and a climb count. You will be able to create and delete Crags and they would be auto filled as completely if all blocs were completed.
-> Image uploading and better topographical maps. The whole concept of Boulder Logs was created to fill the need for up-to-date typography that I always found to be lacking when climbing outdoors. Often times photos and even diagrams are either outdated to near uselessness requiring you have a guide, or not even remotely accurate resulting in half of your time just trying to find the rock you decided you wanted to try. 
-> Boulder Logs could easily be an open-source Crag Guide and logging system offering all of the convenience and use for Trad Climbing, Sport Climbing and even Scrambling. In fact it could be used to track new ascents and burgeoning areas of climb potential.
-JavaScript based interactive Maps for viewing and searching functionality.
+There is a lot I would love to build onto the bare bones of the application in its current state, here are a few examples:
+- A Crag Class, in much the same way that a bloc is saved to a boulder, boulders will belong to a crag. Crags will have a name, a rock-type that is inherited and a climb count. You will be able to create and delete Crags and they would be auto filled as completely if all blocs were completed.
+- Image uploading and better topographical maps. The whole concept of Boulder Logs was created to fill the need for up-to-date typography that I always found to be lacking when climbing outdoors. Often times photos and even diagrams are either outdated to near uselessness requiring you have a guide, or not even remotely accurate resulting in half of your time just trying to find the rock you decided you wanted to try. 
+- Boulder Logs could easily be an open-source Crag Guide and logging system offering all of the convenience and use for Trad Climbing, Sport Climbing and even Scrambling. In fact it could be used to track new ascents and burgeoning areas of climb potential.
+- JavaScript based interactive Maps for viewing and searching functionality.
