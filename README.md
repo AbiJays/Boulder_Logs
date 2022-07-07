@@ -30,3 +30,22 @@ There is a lot I would love to build onto the bare bones of the application in i
 - Image uploading and better topographical maps. The whole concept of Boulder Logs was created to fill the need for up-to-date typography that I always found to be lacking when climbing outdoors. Often times photos and even diagrams are either outdated to near uselessness requiring you have a guide, or not even remotely accurate resulting in half of your time just trying to find the rock you decided you wanted to try. 
 - Boulder Logs could easily be an open-source Crag Guide and logging system offering all of the convenience and use for Trad Climbing, Sport Climbing and even Scrambling. In fact it could be used to track new ascents and burgeoning areas of climb potential.
 - JavaScript based interactive Maps for viewing and searching functionality.
+
+## Installation
+1. You'll need to install flask if not done so already.
+2. Install something to manage SQL, PostgreSQL is what we used for the project and so comes highly recommended.
+3. Install Psycopg for Python and PSQL to interact.
+4. Get the Repo contents however you so wish.
+5. Create an empty database called boulderblocs
+```bash
+createdb bouldersblocs
+```
+6. In the root directory of repository files run the following code to create tables:
+```bash
+psql -d bouldersblocs -f ./db/boulders_blocs.sql
+```
+7. Then run flask within repository's root directory in order to interact with the app.
+```
+flask run
+```
+8. Open http://localhost:5000/ and there it should be. 
