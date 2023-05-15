@@ -1,12 +1,6 @@
 # Project One: Boulder Logs
 Python, HTML, CSS, flask, PostgreSQL
 
-The application is drastically bare bones as we were only allowed to create them using:
-  - HTML / CSS
-  - Python
-  - Flask
-  - PostgreSQL and the psycopg
-
 ## The Brief
 
 <p>From four briefs I chose the "Travel Bucket List" option as it was the most alike an idea I've been kicking around in my head for a while.</p>
