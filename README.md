@@ -44,7 +44,17 @@ createdb boulders_blocs
 ```bash
 psql -d boulders_blocs -f ./db/boulders_blocs.sql
 ```
-6.b) To check 
+6.b. You can check whether or not the database has not only been created but populated by the sql file if you have Postico...
+  i. Open Postico and connect to localhost
+  ii. At the top of the window select localhost (then you will see the databases)
+  iii. Click on the database you've just made: boulders_blocs
+  <img width="1062" alt="Screenshot 2023-05-15 at 16 35 51" src="https://github.com/AbiJays/Boulder_Logs/assets/99146064/8b8fbe25-bcb9-4a72-80c6-37261ebc0292">
+  iv. You should see two tables that when clicked on will display the populated data:
+  <img width="1062" alt="Screenshot 2023-05-15 at 16 42 06" src="https://github.com/AbiJays/Boulder_Logs/assets/99146064/c1a02283-b105-40ae-a47a-26a69d421eb6">
+<img width="1062" alt="Screenshot 2023-05-15 at 16 31 36" src="https://github.com/AbiJays/Boulder_Logs/assets/99146064/8dfa2640-7546-4d7f-aa92-47a0ffa5f69f">
+  v. 
+  vi. 
+
 7. Then run flask within repository's root directory in order to interact with the app.
 ```
 flask run
