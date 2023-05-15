@@ -28,7 +28,7 @@ There is a lot I would love to build onto the bare bones of the application in i
 2. Install something to manage SQL, PostgreSQL is what we used for the project and so comes highly recommended.
 3. Install Psycopg for Python and PSQL to interact.
 4. Get the Repo contents however you so wish.
-5. Create an empty database called boulderblocs
+5. Create an empty database called boulder_blocs
 ```bash
 createdb boulders_blocs
 ```
