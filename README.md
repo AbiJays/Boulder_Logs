@@ -44,6 +44,7 @@ createdb boulders_blocs
 ```bash
 psql -d boulders_blocs -f ./db/boulders_blocs.sql
 ```
+6.b) To check 
 7. Then run flask within repository's root directory in order to interact with the app.
 ```
 flask run
