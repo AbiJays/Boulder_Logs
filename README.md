@@ -38,11 +38,11 @@ There is a lot I would love to build onto the bare bones of the application in i
 4. Get the Repo contents however you so wish.
 5. Create an empty database called boulderblocs
 ```bash
-createdb bouldersblocs
+createdb boulders_blocs
 ```
 6. In the root directory of repository files run the following code to create tables:
 ```bash
-psql -d bouldersblocs -f ./db/boulders_blocs.sql
+psql -d boulders_blocs -f ./db/boulders_blocs.sql
 ```
 7. Then run flask within repository's root directory in order to interact with the app.
 ```
