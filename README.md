@@ -52,7 +52,7 @@ flask run
 ```
 8. You can either click on the terminal link or open http://localhost:5000/ to view.
 <img width="1491" alt="Screenshot 2023-05-15 at 16 47 07" src="https://github.com/AbiJays/Boulder_Logs/assets/99146064/85f991f6-3054-476a-ad11-cf45a95b7a1f">
-9.  If you can't get yourself to download it however, here it is in all it's glory-ish.
+9.  If you can't get yourself to download it however, here it is in all it's glory.
 <img width="1023" alt="Screenshot 2023-05-15 at 16 53 06" src="https://github.com/AbiJays/Boulder_Logs/assets/99146064/031caf53-0e90-4358-9231-1844bdd2b3d6">
 <img width="1023" alt="Screenshot 2023-05-15 at 16 52 49" src="https://github.com/AbiJays/Boulder_Logs/assets/99146064/1f0be6dd-a322-4fa9-811a-8390d7460943">
 <img width="1023" alt="Screenshot 2023-05-15 at 16 52 54" src="https://github.com/AbiJays/Boulder_Logs/assets/99146064/9bbc1dfa-fe53-4229-8533-bf10ef61725c">
